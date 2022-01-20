@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang = "pt-br">
+
+	<head>
+		
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width">
+		<title> Calcule o seu Indice de Massa Corporal</title>
+
+		<link rel ="stylesheet" href = "css/reset.css">
+		<link rel = "stylesheet" href = "css/style_imc.css">
+	</head>
+
+	<body>
+
+		<header>
+			
+			<div class = "titulo"> <h1 > Saúde  </h1 > </div>
+
+		</header>
+
+		<main>
+
+			<section class="container">
+
+				<div class = "titulo-tabela">
+					
+					<h2> Tabela do seu Indice de massa corporal e da sua família. </h2>
+				</div>
+				
+				
+					
+				<label for="filtro-tabela" class="titulo-filtro">Buscar:</label>
+				<input type="text" name="filtro" id="filtro-tabela" placeholder="Digite o nome do paciente">
+				
+			
+				<div>
+
+					<table class="tabela">
+
+						<thead>
+							
+							<tr>
+								<th> Nome </th>
+								<th>Altura</th>
+								<th>Peso(kg)</th>
+								<th> IMC</th>
+								
+							</tr>
+						</thead>
+						
+						<tbody id = "tabela-corpo">
+
+							<tr class = "paciente">
+								<td class = "nome">joão</td>
+								<td class = "altura">1.70</td>
+								<td class = "peso"> 90 </td>
+								<td class = "info_imc"></td>
+							</tr>
+
+							<tr class = "paciente">
+								<td class = "nome">joão</td>
+								<td class = "altura">2.70</td>
+								<td class = "peso"> 100 </td>
+								<td class = "info_imc"></td>
+							</tr>
+							
+							<tr class = "paciente">
+								<td class = "nome">Ana lucia</td>
+								<td class = "altura">1.80</td>
+								<td class = "peso"> 80 </td>
+								<td class = "info_imc"></td>
+							</tr>
+
+							<tr class = "paciente">
+								<td class = "nome">Claudio</td>
+								<td class = "altura">1.70</td>
+								<td class = "peso"> 90 </td>
+								<td class = "info_imc"></td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<span id="erro-ajax" class="invisivel">Ocorreu um erro em sua requisição</span>
+			
+			<button id="buscar-paciente" class="buscar-paciente" > Buscar Pacientes</button>
+
+		
+
+		
+				
+			<nav class = "form">
+					
+				<form id = "formulario-tabela">
+
+					<ul id="mensagem-erro">
+							
+						<li></li>
+					</ul>
+
+					<legend class = "item-tabela"> Insira as informações do paciente:</legend> 
+
+					<label for = "nome"> Nome: </label>
+					<input type = "text" name = " nome "  id = "nome" class = "item-tabela" placeholder=" Nome e Sobrenome " >
+						
+					<label for = "altura"> Altura:</label>
+					<input type = "text" name = "altura" id = "altura" class = "item-tabela"  placeholder= " Altura do paciente " >
+						
+					<label for = "peso">Peso:</label>
+					<input type = "text" name = "peso" id = "peso" class = "item-tabela" placeholder=" Peso do paciente">
+
+					<input type = "submit" value = "Enviar formulário" class = "botao-enviar">
+				</form>
+			</nav>		
+		</main>
+		
+	
+		<script src = "js/calcular.js"></script>
+
+		<script src="js/formulario.js"></script>
+
+		<script src = "js/remover-paciente.js"></script>
+
+		<script src = "js/buscar-pacientes.js"></script>
+
+		<script src = "js/filtragem.js"></script>
+
+	</body>
+
+
+</html>

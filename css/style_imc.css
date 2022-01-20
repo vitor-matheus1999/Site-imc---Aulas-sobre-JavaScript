@@ -1,0 +1,162 @@
+body{
+
+	background:#B0C4DE;
+
+}
+
+header{
+
+	background:#32CD32;
+	padding:20px;
+	margin: 0 auto;
+	border: solid 3px #228B22; 
+}
+
+.titulo{
+
+	width:940px;
+	font-size:35px;
+	position:relative;
+	margin: 0 auto;
+
+}
+
+
+.titulo-tabela{
+
+	text-align: center;
+	font-size: 25px;
+	padding:20px;
+}
+
+.titulo-filtro{
+
+	margin-left: 270px;
+	font-size: 20px;
+
+}
+
+
+#filtro-tabela{
+
+	display:block;
+	margin-left: 270px;
+	padding:10px 25px;
+	margin-top: 10px;
+	width: 25%;
+
+}
+
+
+.tabela{
+
+	margin:0 auto;
+	width:60%;
+	margin-top:50px;
+}
+
+thead{
+
+	
+	background:grey;
+	color:white;
+	font-weight:bold;
+}
+
+th, td{
+
+	border: 1.5px solid lightgrey;
+	padding: 10px 15px;
+
+}
+
+td{
+
+	background:white;
+
+}
+
+#formulario-tabela{
+
+
+	width:65%;
+	background: lightblue;
+	padding:20px;
+	box-sizing: border-box;
+	border: 2px solid #E0FFFF;
+	margin:0 auto;
+	position:relative;
+	top:3em;
+	margin-bottom: 6em;
+}
+
+.formulario{
+
+	padding-top: 20px;
+
+	
+}
+
+.item-tabela{
+
+	display:block;
+	margin:0 0 10px;
+	padding:10px 25px;
+	width: 50%;
+}
+
+
+
+.botao-enviar, .buscar-paciente{
+
+	width: 20%;
+	padding: 20px 0;
+	font-size:10px;
+	font-weight:bold;
+	border-radius:5px;
+	cursor:pointer;
+	border:none;
+	transition:1s all;
+	box-shadow: 0 9px #999;
+	outline:none;
+
+}
+
+.buscar-paciente{
+
+	height: 50px;
+	display:block;
+	margin-left: 270px;
+	padding:10px 25px;
+	margin-top: 10px;
+}
+
+.botao-enviar:hover, .buscar-paciente:hover{
+
+	background:#ADFF2F;
+}
+
+.botao-enviar:active, .buscar-paciente:active{
+
+	border:none;
+	box-shadow: 0 5px #666;
+  	transform: translateY(4px);
+  	transition:0.3s;
+}
+
+
+#mensagem-erro{
+
+	color:red;
+}
+
+.efeito-FadeOut{
+
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.invisivel{
+
+	display:none;
+}
