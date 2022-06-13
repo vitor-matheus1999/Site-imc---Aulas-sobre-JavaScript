@@ -68,7 +68,7 @@ function criarTd(dado, classe){
 
 	var criarTd = document.createElement("td");
 		criarTd.textContent = dado;
-		criarTd.classList.add ("classe");
+		criarTd.classList.add (classe);
 
 	return criarTd;
 }
