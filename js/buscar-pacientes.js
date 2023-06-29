@@ -1,4 +1,5 @@
-var buscarPaciente = document.querySelector("#buscar-paciente");
+var buscarPaciente = document.querySelector("#buscar-paciente"); 
+
 
 buscarPaciente.addEventListener("click", function(){
 
@@ -8,14 +9,19 @@ buscarPaciente.addEventListener("click", function(){
 
     xhr.addEventListener("load", function(){
 
+    
         var erroAjax = document.querySelector("#erro-ajax");
 
         if(xhr.status == 200){
 
             erroAjax.classList.add("invisivel");
-            var pacientes = JSON.parse(xhr.responseText); 
-        
-            pacientes.forEach((paciente) => adicionarPacientes(paciente));
+
+            var pacientes = JSON.parse(xhr.responseText);   
+            
+            pacientes.forEach(function (paciente) { 
+                
+                adicionarPacientes(paciente)
+            });
         }else{
 
             erroAjax.classList.remove("invisivel");
@@ -26,3 +32,5 @@ buscarPaciente.addEventListener("click", function(){
     xhr.send();
 
 });
+
+

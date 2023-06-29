@@ -1,5 +1,3 @@
-
-
 var filtro = document.querySelector("#filtro-tabela");
 
 filtro.addEventListener("input", function(){
@@ -14,7 +12,7 @@ filtro.addEventListener("input", function(){
             
             var nomeTd = paciente.querySelector(".nome");
             
-            var nome = nomeTd.textContent;
+            var nome = nomeTd.textContent;    
             
             var expressao = new RegExp(this.value, "i");
 

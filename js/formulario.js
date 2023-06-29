@@ -1,5 +1,3 @@
-
-
 var pacientes = document.querySelector(".paciente");
 
 
@@ -48,7 +46,6 @@ function exibeMensagemDeErro(erros){
 	});
 
 
-
 }
 
 function obtemPacienteDoFormulario(form) {
@@ -68,7 +65,7 @@ function criarTd(dado, classe){
 
 	var criarTd = document.createElement("td");
 		criarTd.textContent = dado;
-		criarTd.classList.add ("classe");
+		criarTd.classList.add (classe);
 
 	return criarTd;
 }
@@ -106,6 +103,11 @@ function validaPaciente(paciente){
 		mensagemDeErros.push("Por favor, insira as informações do paciente.");
 		
 		return mensagemDeErros;
+	}
+
+	if(!nomeEhValido(paciente.nome)){
+
+		mensagemDeErros.push("Nome é inválido");
 	}
 
 	
