@@ -1,0 +1,13 @@
+--------------------------------------------Mudar algum simbolo ----------------------------------------------------
+
+Caso queira mudar algum simbolo em javascript coloque a função:
+
+.replace("coisa que vai ser mudadada" , "coisa que vai entrar no lugar")
+
+---------------------------------------------------------------------------------------------------------------------
+
+--------------------------------- Simbolo para resto ou módulo de uma divisão ---------------------------------------
+
+Para pegar o resto em uma divisão use o simbolo de -> % <- para pegar o resto da divisão
+
+--------------------------------------------------------------------------------------------------------------------- 
